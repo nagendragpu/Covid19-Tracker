@@ -6,6 +6,7 @@ import {
   Select,
   Card,
   CardContent,
+  Button,
 } from "@material-ui/core";
 import InfoBox from "./InfoBox";
 import LineGraph from "./LineGraph";
@@ -14,6 +15,10 @@ import { sortData, prettyPrintStat } from "./util";
 import numeral from "numeral";
 import Map from "./Map";
 import "leaflet/dist/leaflet.css";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import CopyrightIcon from "@material-ui/icons/Copyright";
 
 const App = () => {
   const [country, setInputCountry] = useState("worldwide");
@@ -132,6 +137,23 @@ const App = () => {
           </div>
         </CardContent>
       </Card>
+      <div className="app__footer">
+        <div className="app__footerIcons">
+          <Button>
+            <FacebookIcon fontSize="large" />
+          </Button>
+          <Button>
+            <TwitterIcon fontSize="large" />
+          </Button>
+          <Button>
+            <InstagramIcon fontSize="large" />
+          </Button>
+        </div>
+        <div className="app__footerDetails">
+          <CopyrightIcon />
+          <h2>Designed by bannu</h2>
+        </div>
+      </div>
     </div>
   );
 };

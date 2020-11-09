@@ -11,6 +11,7 @@ body {
   justify-content: space-evenly;
   background-color: #f5f6fa;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .app__dropdown {
@@ -53,4 +54,23 @@ body {
   .app {
     flex-direction: column;
   }
+}
+
+.app__footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.app__footerDetails {
+  margin-top: 10 px;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
 }
